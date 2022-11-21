@@ -6,3 +6,7 @@ https://github.com/MoGHenry/icsi418y-a4
 
 EC2 link
 http://44.201.175.30:80
+
+
+video link
+https://youtu.be/FYVRSY1LBCU
