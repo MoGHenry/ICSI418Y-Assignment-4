@@ -2,33 +2,50 @@
 <html lang="en">
 <!-- CSS only -->
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 <style>
-.card{
-  flex-direction: row;
-}
-.card-body{
-  width:30rem;
-  flex: none;
-}
-.card img{
-  width: 20%;
-}
+    /*.container img {*/
+    /*    width: 30%;*/
+    /*}*/
 </style>
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
-<div class="card">
-  <img src="https://icsi418a3henry.s3.amazonaws.com/Yueheng+Qiu.jpg" class="card-img-top" alt="profile picture">
-  <div class="card-body">
-    <h5 class="card-title">Henry Qiu</h5>
-    <p class="card-text">
-      A motivated and passionate student with the intention of gaining admission into your renowned University. Hardworking and driven, with goals of flourishing in your respected Liberal Arts program. Bringing forth a strong academic background with a steady GPA above 3.4. Committed to working hard and serving my school, peers, and community.
-    </p>
-  </div>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./pic/cat.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                ICSI 418Y Assignment 4
+            </a>
+        </div>
+    </nav>
+</header>
+<% images.forEach(function(image))%>
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <%=image.image%>>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col">
+                    <p style="font-weight: bold; font-size: 25px;"><%image.name%>></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <%image.description%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 </body>
 
